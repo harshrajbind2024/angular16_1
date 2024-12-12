@@ -1,0 +1,35 @@
+
+<!-- 
+
+ <h2>using ngif,else </h2>
+<div>
+    <input type="radio" name="radio1" (click)="chanhgevalue(true)"> true
+    <input type="radio" name="radio" (click)="chanhgevalue(false)"> false
+ 
+    <div *ngIf="isvalid ; else elseblock" > 
+   this is valid
+  </div>
+ <ng-template #elseblock>
+    <div > 
+        this is not valid ,becouse elseblock
+      </div>
+ </ng-template>
+
+
+ <div *ngIf="isvalid ; then thenblock ; else elseblock" >   
+   </div>
+   <ng-template #thenblock>
+    <div > 
+        this is  valid ,becouse thenblock
+      </div>
+ </ng-template>
+  <ng-template #elseblock>
+     <div > 
+         this is not valid ,becouse elseblock
+       </div>
+  </ng-template>
+</div>
+
+
+
+ -->
