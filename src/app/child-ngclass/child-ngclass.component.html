@@ -1,0 +1,20 @@
+<p>child-ngclass works!</p>
+
+
+<h1> using ngclass as a string </h1>
+<p [ngClass]="'one two'" > ngclss example </p>
+
+
+<div *ngFor="let user of users" [ngClass]="'one four'" >
+  {{user}}
+</div>
+
+<!-- as a array ngclass -->
+<h4 [ngClass]="['three','two']"> array ngclass</h4>
+
+<!-- as a object  -->
+ <h3 [ngClass]="{'one':true,'three':false}" > example gnclass as a object </h3>
+
+
+ <!-- as a component methode -->
+  <!-- <div [ngClass]="getNgclassMeth("mode")" > example component method </div> -->

@@ -1,0 +1,57 @@
+<p>child-attribute works!</p>
+ 
+  <h1>static</h1>
+<table border="1" height="200" [width]="200" >
+    <tr>
+        <td colspan="4" >student details</td>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+    </tr>
+    <tr>
+        <td>id </td>
+        <td>name </td>
+        <td>class </td>
+        <td>gender </td>
+    </tr>
+    <tr>
+        <td>oo1</td>
+        <td>harsh</td>
+        <td>b.tech </td>
+        <td>male</td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+<h1>dynamic or attribute</h1>
+<table [attr.border]="bdr" height="200" [width]="200" >
+    <tr>
+        <td  [attr.colspan]="cols" >student details</td>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+    </tr>
+    <tr>
+        <td>id </td>
+        <td>name </td>
+        <td>class </td>
+        <td>gender </td>
+    </tr>
+    <tr>
+        <td>oo1</td>
+        <td>harsh</td>
+        <td>b.tech </td>
+        <td>male</td>
+    </tr>
+</table>
+
+
+
+
+

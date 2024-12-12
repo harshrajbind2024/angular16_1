@@ -1,0 +1,30 @@
+<p>child-for works!</p>
+
+
+<h2> using *ngFor</h2>
+<!-- <ul>
+    <li *ngFor="let student of students" >
+        {{student.name}}
+    </li>
+</ul> -->
+
+<!-- <ul>
+    <li *ngFor="let student of students;let i=index " >
+       {{i+1}}-     #{{student.name}} 
+    </li>
+</ul> -->
+<!-- 
+
+<ul>
+    <li *ngFor="let student of students; let i=index; let f=first;let l=last" >
+       {{i+1}}-     #{{student.name}} -{{f}} -{{l}}
+    </li>
+</ul> -->
+
+
+
+<ul>
+    <li *ngFor="let student of students; let i=index; let f=first;let l=last; let en=even;let od=odd" >
+       {{i+1}}-     #{{student.name}} -{{f}} -{{l}}  ----  {{en}}-{{od}}
+    </li>
+</ul>

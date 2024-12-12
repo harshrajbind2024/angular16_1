@@ -1,0 +1,39 @@
+<p>child-track-api-data works!</p>
+
+<!-- <h2> custam data fetch example </h2>
+
+<table border="1" >
+    <tr *ngFor="let s of students ; let i=index" >
+        <td> {{i+1}} </td>
+        
+        <td> {{s.studentId}} </td>,
+        <td> {{s.name}} </td>,
+        <td> {{s.gender}} </td>,
+        <td> {{s.cource}} </td>,
+        <td> {{s.age}} </td>
+    </tr>
+</table>
+
+<br/>
+<button (click)="getMoreStudent()" >add</button> -->
+
+
+
+
+
+<h2>track by example</h2>
+
+<table border="1" >
+    <tr *ngFor="let s of students ; let i=index;trackBy:trackBystudentId" >
+        <td> {{i+1}} </td>
+        
+        <td> {{s.studentId}} </td>,
+        <td> {{s.name}} </td>,
+        <td> {{s.gender}} </td>,
+        <td> {{s.cource}} </td>,
+        <td> {{s.age}} </td>
+    </tr>
+</table>
+
+<br/>
+<button (click)="getMoreStudent()" >add</button>

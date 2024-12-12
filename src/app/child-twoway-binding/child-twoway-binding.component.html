@@ -1,0 +1,21 @@
+<p>child-twoway-binding works!</p>
+
+
+<h1> example two  way binding </h1>
+
+<!-- it's  error  lectur
+enter name: <input [value]="data" (input)='data=$event.target.value '>
+you name {{data}} -->
+
+
+
+<!-- it is not work -->
+<!-- enter name: <input [value]="data" (input)="updateValue($event)"> -->
+
+
+
+<!--it's work  -->
+<h1>Two-Way Data Binding Example</h1>
+<input [(ngModel)]="name" [value]="name" placeholder="Enter your name" />
+<p>Hello, {{ name }}!</p>
+

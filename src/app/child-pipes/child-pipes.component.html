@@ -1,0 +1,33 @@
+<p>child-pipes works!</p>
+
+<!-- built-in pipe -->
+ <h1>built-in pipe</h1>
+<table border="1">
+    <tr>
+        <td>empolyee code </td>
+        <td>empolyee name  </td>
+        <td>empolyee salary </td>
+        <td>empolyee date of birth </td>
+    </tr>
+    <tr *ngFor="let empolyee of employees" >
+          <td> {{empolyee.code|uppercase}} </td>
+          <td> {{empolyee.name|lowercase}} </td>
+
+          <td> {{empolyee.salary|currency}} </td>
+          <td> {{empolyee.dob}} </td>
+
+    </tr>
+</table>
+<br/><br/><br/><br/><br/><br/><br/>
+
+
+<h1>parametarize</h1>
+<div>
+   without parameter: {{DOB}}
+   <br/>
+   parametarize medium:{{DOB|date:"medium"}}
+   <br/>
+   spesific formate: {{DOB|date:"dd/mm/yyyy"}}
+   <br/>
+   parametarize medium:{{DOB|date:"mediumTime"}}
+</div>
